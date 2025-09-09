@@ -84,6 +84,9 @@ streamlit run app.py
 Open the link in your browser:
 👉 [http://localhost:8501](http://localhost:8501)
 
+
+check out my app : https://sanyagupta31-ai-assessment-engine-app-szggmd.streamlit.app/
+
 ---
 
 ## 📊 Output

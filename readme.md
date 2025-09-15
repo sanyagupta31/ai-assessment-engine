@@ -14,7 +14,6 @@ An AI-powered platform that dynamically generates **role-specific technical asse
 
 
 
-
 ## ✨ Key Features
 
   * **Dynamic Skill Extraction**: Intelligently parses any job description to identify the most critical technical skills.
@@ -107,5 +106,5 @@ This project is licensed under the MIT License.
 ## 👩‍💻 Connect with Me
 
 **Sanya Gupta**
-
+My Linkedin : https://www.linkedin.com/in/sanya-gupta-2466052a6/
   

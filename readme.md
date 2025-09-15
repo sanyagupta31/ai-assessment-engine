@@ -2,102 +2,110 @@
 
 # 🤖 AI-Powered Dynamic Assessment Engine
 
-An AI-powered platform that generates **role-specific technical assessments** dynamically using **Gemini API**.
-It analyzes a job description, extracts relevant skills, generates multiple-choice questions, and produces a detailed **candidate performance report**.
+[](https://www.python.org/)
+[](https://streamlit.io/)
+[](https://ai.google.dev/)
 
----
+An AI-powered platform that dynamically generates **role-specific technical assessments** using the **Google Gemini API**. This tool helps recruiters streamline the technical screening process by creating relevant, on-the-fly assessments tailored to any job description.
 
-## ✨ Features
+### 🔴 [**Live Demo**](https://sanyagupta31-ai-assessment-engine-app-szggmd.streamlit.app/)
 
-* 📌 **Job Description Analysis** – Extracts top technical skills from a given role description.
-* 🤖 **Dynamic Question Generation** – AI creates MCQs for each skill.
-* 📝 **Candidate Assessment** – Personalized test for each candidate.
-* 📊 **Detailed Report** – Overall score, skill-wise performance, and recruiter-friendly CSV export.
-* 🎯 **Adaptive Evaluation** – Rates candidates as **Strong 🏆**, **Medium 👍**, or **Weak 👎**.
-
----
-
-## 🚀 Demo Flow
-
-1. Recruiter inputs **Candidate Name + Role Title + Job Description**.
-2. AI extracts top skills from the job description.
-3. MCQs are generated dynamically for each skill.
-4. Candidate answers questions in an interactive UI.
-5. Recruiter receives a detailed **skill-wise performance report**.
-
----
+-----
 
 
+
+
+## ✨ Key Features
+
+  * **Dynamic Skill Extraction**: Intelligently parses any job description to identify the most critical technical skills.
+  * **AI-Powered Question Generation**: Leverages the Gemini API to create a unique set of questions for each skill, including multiple-choice and coding snippets.
+  * **Interactive Candidate Experience**: A clean, intuitive UI for candidates to take the assessment.
+  * **Comprehensive Reporting**: Instantly generates a results dashboard with an overall score, proficiency ratings (**Strong** 🏆, **Medium** 👍, **Weak** 👎), and a skill-by-skill breakdown.
+  * **Exportable Results**: Recruiters can download a detailed report as a **CSV file** for easy record-keeping and sharing.
+
+-----
 
 ## 🛠️ Tech Stack
 
-* [Python 3.10+](https://www.python.org/)
-* [Streamlit](https://streamlit.io/) – UI framework
-* [Google Gemini API](https://ai.google.dev/) – AI model for skill & question generation
-* [Pandas](https://pandas.pydata.org/) – Data processing & reporting
+  * **Python**: Core programming language.
+  * **Streamlit**: For creating the interactive web UI.
+  * **Google Gemini API**: The LLM for skill extraction and question generation.
+  * **Pandas**: For data manipulation and creating the final CSV report.
 
----
+-----
 
-## ⚙️ Installation
+## 🚀 Getting Started
 
-Clone the repo:
+Follow these steps to set up and run the project on your local machine.
+
+### 1\. Clone the Repository
 
 ```bash
 git clone https://github.com/sanyagupta31/ai-assessment-engine.git
 cd ai-assessment-engine
 ```
 
-Create virtual environment (optional but recommended):
+### 2\. Create and Activate a Virtual Environment
 
-```bash
-python -m venv venv
-source venv/bin/activate   # On Mac/Linux
-venv\Scripts\activate      # On Windows
-```
+It's recommended to use a virtual environment to manage dependencies.
 
-Install dependencies:
+  * **On macOS/Linux:**
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+  * **On Windows:**
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+
+### 3\. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
+### 4\. Set Up Your API Key
 
-## 🔑 Setup API Key
+1.  Obtain your **Google Gemini API key** from [Google AI Studio](https://aistudio.google.com/).
 
-1. Get your **Google Gemini API key** from [AI Studio](https://aistudio.google.com/).
-2. In your Streamlit project folder, create a file: `.streamlit/secrets.toml`
-3. Add the following:
+2.  Create a file named `secrets.toml` inside a `.streamlit` folder at the root of your project: `/.streamlit/secrets.toml`.
 
-```toml
-GOOGLE_API_KEY="your_api_key_here"
-```
+3.  Add your API key to the `secrets.toml` file as shown below:
 
----
+    ```toml
+    GOOGLE_API_KEY = "your_api_key_here"
+    ```
 
-## ▶️ Run the App
+-----
+
+## ▶️ Run the Application
+
+Once the setup is complete, run the following command in your terminal:
 
 ```bash
 streamlit run app.py
 ```
 
-Open the link in your browser:
-👉 [http://localhost:8501](http://localhost:8501)
+Your app will now be running on [http://localhost:8501](https://www.google.com/search?q=http://localhost:8501).
 
+-----
 
-check out my app : https://sanyagupta31-ai-assessment-engine-app-szggmd.streamlit.app/
+## 🤝 Contributing
 
----
+Contributions are welcome\! If you have suggestions for improvements or find a bug, please feel free to open an issue or submit a pull request.
 
-## 📊 Output
+-----
 
-* Interactive **assessment page** for candidates.
-* Auto-generated **results dashboard** with charts & tables.
-* Downloadable **CSV report** for recruiters.
+## 📝 License
 
----
+This project is licensed under the MIT License.
 
-## 👩‍💻 Author
+-----
+
+## 👩‍💻 Connect with Me
 
 **Sanya Gupta**
 
+  

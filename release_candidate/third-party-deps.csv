@@ -1,0 +1,4 @@
+Name,Purpose,License,Version,Billing Model,Estimated Monthly Cost,Cost Increases with Scale?,Notes
+Streamlit,Web application framework,Apache 2.0,1.36.0,Free,0,No,N/A
+google-generativeai,Python SDK for Gemini API,Apache 2.0,0.7.0,N/A,N/A,N/A
+Google Gemini API,AI service for skill/question generation,Commercial,N/A,"Pay-per-token",Varies based on usage,Yes,"This is a core dependency and cost will increase with the number of assessments."

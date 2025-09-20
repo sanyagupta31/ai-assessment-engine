@@ -1,0 +1,5 @@
+ID,Title,Pre-conditions,Steps,Expected result,Status,Tester,Date
+TC-E2E-001,Full Assessment Flow,App is running and has a valid API key.,1. Go to the main page. 2. Enter candidate details, role, and a job description. 3. Click "Generate Assessment". 4. Answer all questions. 5. Click "Submit".,"The 'Assessment Results Dashboard' page is displayed with a score, and a CSV report is downloadable.",,
+TC-API-001,Gemini Skill Extraction,Valid Google API Key is in secrets.toml.,1. Enter a job description. 2. Click "Generate Assessment".,"The app successfully extracts a list of skills and proceeds to the assessment page without an error.",,
+TC-FUNC-001,Scoring Logic,An assessment has been submitted.,1. Submit an assessment with all correct answers. 2. Submit an assessment with a mix of correct and incorrect answers. 3. Submit an assessment with all incorrect answers.,"The displayed overall score accurately reflects the number of correct answers for each test case.",,
+TC-UI-002,Results Dashboard UI,An assessment has been submitted.,1. Navigate to the results page.,The page displays an overall score, a progress bar, a skill-wise bar chart, and a CSV download button.,,

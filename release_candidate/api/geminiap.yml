@@ -1,0 +1,62 @@
+openapi: 3.0.0
+info:
+  title: AI Assessment Engine API Documentation
+  version: 1.0.0
+  description: Documents the external Google Gemini API used by the assessment engine and the proposed internal API for Odoo CRM integration.
+
+paths:
+  # This section documents the external Google Gemini API calls
+  /v1beta/models/gemini-1.5-flash:generateContent:
+    post:
+      summary: Generates content (skills or questions) using Google's Gemini API.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                contents:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      parts:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            text:
+                              type: string
+                              example: "Generate questions for the skill: 'Python'."
+      responses:
+        '200':
+          description: Successful response with the generated content in JSON format.
+        '403':
+          description: Forbidden (invalid API key).
+
+  # This section documents the proposed internal API for Odoo integration
+  /api/v1/assessments:
+    post:
+      summary: Sends final assessment results to Odoo CRM.
+      description: This endpoint will push assessment scores and candidate details to Odoo.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                assessment_id:
+                  type: string
+                candidate_name:
+                  type: string
+                role:
+                  type: string
+                overall_score:
+                  type: number
+      responses:
+        '201':
+          description: Assessment data successfully created in Odoo.
+        '400':
+          description: Invalid request payload.

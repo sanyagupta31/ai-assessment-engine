@@ -15,7 +15,7 @@ This guide provides instructions for building and deploying the application to s
     ```
 
 ## Build & Deployment Steps
-1.  **Clone the repository:** `git clone [your-repo-link]`
+1.  **Clone the repository:** `git clone https://github.com/sanyagupta31/ai-assessment-engine.git`
 2.  **Navigate to the project directory:** `cd ai-assessment-engine`
 3.  **Install dependencies:** `pip install -r requirements.txt`
 4.  **Run the application:** `streamlit run app.py`
